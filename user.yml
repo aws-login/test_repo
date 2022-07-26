@@ -1,0 +1,10 @@
+- name: variable example
+  hosts: all
+  become: yes
+  vars:
+          user: parker
+  tasks:
+        - name: adduser {{ user }}
+          user:
+              name: "{{ user }}"
+              state: present
