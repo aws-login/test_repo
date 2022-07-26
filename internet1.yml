@@ -1,6 +1,6 @@
 ---
 - name: Enable intranet services
-  hosts: 172.31.26.186
+  hosts: 127.0.0.1
   become: yes
   tasks:
      - name: latest version of httpd and firewalld installed
